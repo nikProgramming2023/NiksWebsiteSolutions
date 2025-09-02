@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of a web developer building fast, modern, call‑driven websites for local businesses." />
+  <title>Nick — Web Developer</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>⚡</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ====== Header ====== -->
+  <header>
+    <div class="container">
+      <nav aria-label="Primary">
+        <a class="brand" href="#home">
+          <span class="logo" aria-hidden="true">⚡</span>
+          <span>Nick’s Website Solutions</span>
+        </a>
+        <div class="navlinks" id="navlinks">
+          <a href="#work">Portfolio</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a class="btn ghost" href="tel:+1-936-555-0133" title="Call now">📞 Call</a>
+        </div>
+        <button class="menu-btn btn ghost" id="menuBtn" aria-expanded="false" aria-controls="navdrawer">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== Mobile Drawer ====== -->
+  <dialog id="navdrawer" style="border:none; border-radius:16px; width:min(92vw,480px); background:var(--surface); color:var(--text);">
+    <form method="dialog" style="margin:0;">
+      <div class="container" style="padding:1rem; display:grid; gap:.6rem;">
+        <button value="cancel" class="btn ghost" style="justify-self:end;">Close ✕</button>
+        <a href="#work" class="btn ghost">Portfolio</a>
+        <a href="#services" class="btn ghost">Services</a>
+        <a href="#about" class="btn ghost">About</a>
+        <a href="#contact" class="btn ghost">Contact</a>
+        <a href="tel:+1-936-555-0133" class="btn primary">📞 Call</a>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- ====== Hero ====== -->
+  <main id="home" class="hero">
+    <div class="container">
+      <span class="pill">Available for freelance · Texas</span>
+      <h1>Fast, modern websites that get phones ringing.</h1>
+      <p class="lead">I build lightweight, SEO‑friendly sites for local trades and small businesses. Clean code, fast load times, and layouts that convert.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#work">See My Work →</a>
+        <a class="btn ghost" href="#contact">Get a Free Quote</a>
+      </div>
+      <div class="badges">
+        <span class="pill">Core Web Vitals focused</span>
+        <span class="pill">No CSS !important bloat</span>
+        <span class="pill">Phone‑first UX</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- ====== Portfolio ====== -->
+  <section id="work">
+    <div class="container">
+      <div class="section-top">
+        <div>
+          <h2>Selected Work</h2>
+          <p>Live links and demos. Each project ships with speed, clarity, and a clear call‑to‑action.</p>
+        </div>
+        <a class="btn ghost" href="#contact">Start a Project</a>
+      </div>
+      <div class="grid work-grid">
+        <article class="card work-card">
+          <img loading="lazy" src="https://picsum.photos/seed/elec/800/500" alt="Screenshot of an electrician website" />
+          <div class="body">
+            <h3>Lufkin Sparks Electric</h3>
+            <div class="meta"><span>⚡ Trades</span><span>•</span><span>1.2s LCP</span></div>
+            <p>Call‑first landing page for an electrical contractor. Tight layout, sticky phone CTA, schema markup.</p>
+            <p><a href="#" class="btn ghost">View Demo</a></p>
+          </div>
+        </article>
+        <article class="card work-card">
+        </article>
+        <article class="card work-card">
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Services ====== -->
+  <section id="services">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="grid svc-grid">
+        <div class="card svc">
+          <div class="icon">⚡</div>
+          <h3>Fast & Responsive Sites</h3>
+          <p>Ship pages that feel instant on 4G. Semantic HTML, minimal JS, images that don’t balloon.</p>
+        </div>
+        <div class="card svc">
+          <div class="icon">🎯</div>
+          <h3>Local SEO</h3>
+          <p>Basic on‑page SEO and schema so you show up for the jobs you actually want.</p>
+        </div>
+        <div class="card svc">
+          <div class="icon">📞</div>
+          <h3>Call‑First UX</h3>
+          <p>Sticky phone button, obvious CTAs, and layouts tuned for busy owners on their phones.</p>
+        </div>
+        <div class="card svc">
+          <div class="icon">🔧</div>
+          <h3>Custom Solutions</h3>
+          <p>Small integrations, landing pages, and simple CMS hookups without bloat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== About ====== -->
+  <section id="about">
+    <div class="container">
+      <h2>About</h2>
+      <div class="about card">        <div>
+          <p>Hey, I’m Nick — a Texas‑based web dev focused on simple, fast, conversion‑oriented sites for local businesses. I keep stack and scope tight so you get results quickly.</p>
+          <p class="pill">Values: reliability · clarity · speed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Testimonials ====== -->
+  <section id="testimonials">
+    <div class="container">
+      <h2>What clients say</h2>
+      <div class="grid t-grid">
+        <figure class="card">
+          <blockquote>
+            <p class="stars">★★★★★</p>
+            <p>“Phone calls doubled within a week. Clean and fast site, zero fluff.”</p>
+          </blockquote>
+          <figcaption>— J. Miller, Contractor</figcaption>
+        </figure>
+        <figure class="card">
+          <blockquote>
+            <p class="stars">★★★★★</p>
+            <p>“Set up was painless and the site loads crazy fast on my crew’s phones.”</p>
+          </blockquote>
+          <figcaption>— A. Ramirez, HVAC owner</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Contact ====== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-top">
+        <div>
+          <h2>Let’s get your business more calls</h2>
+          <p>Quick form below. Or skip the line and call me now.</p>
+        </div>
+        <a class="btn primary" href="tel:+1-936-671-1970">📞 Call now</a>
+      </div>
+
+      <div class="contact-wrap">
+        <form class="card" aria-label="Contact form" onsubmit="event.preventDefault(); alert('Thanks! I\'ll get back to you shortly.');">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" autocomplete="name" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <button class="btn primary" type="submit">Send message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap;">
+      <div>© <span id="year"></span> Nick’s Website Solutions • All rights reserved</div>
+      <div style="display:flex; gap:.8rem;">
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:hello@example.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const drawer = document.getElementById('navdrawer');
+    menuBtn?.addEventListener('click', () => {
+      drawer.showModal();
+      menuBtn.setAttribute('aria-expanded','true');
+    });
+    drawer?.addEventListener('close', () => menuBtn.setAttribute('aria-expanded','false'));
+
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+2
+    // Accessibility nicety: close drawer on Esc for some browsers
+    drawer?.addEventListener('keydown', (e) => { if (e.key === 'Escape') drawer.close(); });
+  </script>
+</body>
+</html>
